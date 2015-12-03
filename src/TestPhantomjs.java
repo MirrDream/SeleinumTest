@@ -1,5 +1,6 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -55,7 +56,7 @@ public class TestPhantomjs {
 
     }
 
-    @Test
+    @Ignore
     public void testPhantojs(){
         driver.get(Url);
         WebElement heightField = driver.findElement(By.name("height"));

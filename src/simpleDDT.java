@@ -70,11 +70,7 @@ public class simpleDDT {
         assertEquals(bmiCategory, bmiCategoryNum.getText());
         WebElement upFile = driver.findElement(By.id("upFile"));
         upFile.sendKeys("e:\\Backup\\gitrepo\\learngit\\readme.txt");
-        System.out.println(upFile.getTagName());
-        System.out.println(upFile.getText());
-        Thread.sleep(10000);
-        upFile.click();
-        Thread.sleep(20000);
+
     }
 
 
