@@ -11,7 +11,7 @@
         <pathelement path="${dest}" />
     </path>
 
-    <target name="init">
+    <target name="init" depends="clean">
         <mkdir dir="${dest}"/>
         <mkdir dir="${report}"/>
     </target>

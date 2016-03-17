@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="selenium" level="project" />
     <orderEntry type="library" exported="" name="poi-3.13-20150929" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-5.1.18-bin" level="project" />
+    <orderEntry type="library" exported="" name="selenium-2.52" level="project" />
   </component>
 </module>

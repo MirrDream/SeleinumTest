@@ -26,12 +26,3 @@ public class SeleniumDemo01
 
     }
 }
-
-/*运行结果：
-        1.firefox浏览器期待
-        2.打开百度主页
-        3.在搜索框中键入了"java selenium"
-        4.点击"百度一下"按钮
-        5.等等页面加载50s
-        6.关闭浏览器
-*/

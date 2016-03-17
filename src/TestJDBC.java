@@ -19,7 +19,7 @@ public class TestJDBC {
 
         try{
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            conn = DriverManager.getConnection("jdbc:mysql://192.168.89.18/kubauser?" +
+            conn = DriverManager.getConnection("jdbc:mysql://192.168.89.15/kubauser?" +
                     "user=coo8new&password=yhd,123");
         }catch (SQLException ex){
             System.out.println("SQLException: " + ex.getMessage());
@@ -30,6 +30,11 @@ public class TestJDBC {
         try{
             st = conn.createStatement();
             rs = st.executeQuery("select * from ecuser_account limit 1,100");
+            while (rs.next()){
+                System.out.println(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3) +
+                        "\t" + rs.getString(4) + "\t" + rs.getString(5) + "\t" + rs.getString(6)
+                + "\t" + rs.getString(7) + "\t" + rs.getString(8));
+            }
 
             if(st.execute("select * from ecuser_account limit 1,100")){
                 rs = st.getResultSet();

@@ -51,6 +51,8 @@ public class simpleDDT {
         File file = new File("e:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
         FirefoxBinary binary = new FirefoxBinary(file);
         FirefoxProfile profile = new FirefoxProfile();
+        profile.setPreference("browser.startup.homepage", "");
+
         driver = new FirefoxDriver(binary, profile);
     }
 
